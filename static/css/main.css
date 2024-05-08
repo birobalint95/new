@@ -105,6 +105,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .services .container .serviceBx img {
@@ -162,7 +163,6 @@
     position:relative;
     margin:50px auto;
     padding:40px 0;
-    width:1000px;
     box-sizing:border-box;
 }
   
@@ -321,7 +321,6 @@
     padding: 100px;
     padding-top: 200px;
     margin-top: -200px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
