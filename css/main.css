@@ -49,6 +49,7 @@
     position: relative;
     width: 100%;
     display: flex;
+    background: #162c3b;;
 }
   
 .about .contentBx {
@@ -141,8 +142,14 @@
         margin-top: 20px;
     }
     .services .container .serviceBx {
-        margin: 20px;
-        width: 300px;
-        height: 350px;
+        margin: 5px;
+        width: 100px;
+        height: 150px;
+    }
+    .services .container .serviceBx h2 {
+        font-size: 14px;
+    }
+    .services .container .serviceBx img {
+        max-width: 80px;
     }
 }
