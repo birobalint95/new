@@ -49,10 +49,8 @@
         </section>
     <script src="js/skrollr.js"></script>
     <script type="text/javascript">
-        var _isMobile = ((options.mobileCheck || function() {
-			return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
-		})());
-        if(! _isMobile) {
+        const isMobile = navigator.userAgentData.mobile;
+        if(! isMobile) {
             var s = skrollr.init();
 		}
         // var s = skrollr.init();
