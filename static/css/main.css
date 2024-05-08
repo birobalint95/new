@@ -73,7 +73,7 @@
   
 .about .imgBx
 {
-    background: url("../images/me.jpeg");
+    background: url("../static/images/me.jpeg");
     width: 50%;
     background-size: cover; background-position: center;
 }
