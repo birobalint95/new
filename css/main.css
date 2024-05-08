@@ -111,3 +111,25 @@
     font-size: 20px;
     letter-spacing: 1px;
 }
+
+@media (max-width: 991px) {
+    .banner {
+        padding: 50px;
+    }
+    .banner .content h2 {
+        font-size: 36px;
+    }
+    .banner .content p {
+        font-size: 16px;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about .contentBx,
+    .about .imgBx {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+}
