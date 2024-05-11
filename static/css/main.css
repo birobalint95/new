@@ -67,6 +67,25 @@ html {
     font-size: 17px;
     text-transform: uppercase;
     Letter-spacing: 1px;
+    position: relative;
+}
+
+.banner header .logo:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.banner header .logo:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 
 .nav-item {
