@@ -205,6 +205,7 @@ html {
     align-items: center;
     border-radius: 20px;
     z-index: 1;
+    margin: 20px;
 }
 
 .services .container .serviceBx img {
@@ -424,8 +425,8 @@ html {
     background: #3f8ffc;
     width: 100%;
     padding: 50px;
-    padding-top: 200px;
-    margin-top: -200px;
+    /* padding-top: 200px; */
+    /* margin-top: -200px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -448,4 +449,85 @@ html {
   
 #myBtn:hover {
     background-color: #dd9aff;
+}
+
+.container-2 {
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+}
+  
+.container-2:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+  
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front{
+    padding: 100px 0;
+    text-align: center;
+    background: white;
+    color: black;
+}
+  
+.front img {
+    max-height: 160px;
+}
+  
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+  
+.back {
+    background-color: #6b6b6b;
+    display: flex;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+.back-title,
+.front-title {
+    padding: 10px;
+}
+  
+.back-title {
+    color: white;
+    font-weight: 100;
+}
+  
+.skill-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+  
+.right {
+    display: flex;
+    padding: 20px 40px;
+    flex: 0 1 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.right div {
+    background-color: white;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 10px;
 }
