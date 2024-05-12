@@ -192,7 +192,7 @@ html {
   
 .about .imgBx
 {
-    background: url("../images/me2.jpg");
+    background: url("../images/me2.png");
     width: 50%;
     background-size: cover; background-position: center;
 }
