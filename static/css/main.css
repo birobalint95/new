@@ -562,7 +562,7 @@ html {
   
 .skill-container .left div, 
 .skill-container .right div,
-.skill-container .center {
+.skill-container .center div {
     background-color: white;
     color: black;
     text-align: center;
