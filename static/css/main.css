@@ -238,7 +238,7 @@ html {
     letter-spacing: 1px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
     .banner {
         padding: 50px;
     }
@@ -573,4 +573,13 @@ html {
 
 #more {
     display: none;
+}
+
+@media(max-width:1000px) {
+    .back-title {
+        font-size: 13px;
+    }
+    .skill-container {
+        font-size: 12px;
+    }
 }
