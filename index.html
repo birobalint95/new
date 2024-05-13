@@ -103,13 +103,13 @@
                     <div class="timeline">
                     <ul>
                         <li>
-                            <div id="hello" class="content" data-center-center="opacity: 1; left: 0;" data-0-bottom="opacity: 0; left: -500px;">
+                            <div class="content" data-center-center="opacity: 1; left: 0;" data-0-bottom="opacity: 0; left: -500px;">
                                 <h3>Product Owner</h3>
                                 <h4>Jaguar Land Rover</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
                                 <button onclick="myFunction()" id="myBtn2">Read more</button>
                             </div>
-                            <div class="time" data-center-center="opacity: 1; right: -210px;" data-0-bottom="opacity: 0; right: -500px;">
+                            <div id="hello" class="time" data-center-center="opacity: 1; right: -210px;" data-0-bottom="opacity: 0; right: -500px;">
                                 <h4>2022 Apr - present</h4>
                             </div>
                         </li>
@@ -305,7 +305,7 @@
         <script type="text/javascript">
             const isMobile = navigator.userAgentData.mobile;
             if(! isMobile) {
-                // var s = skrollr.init();
+                var s = skrollr.init();
             }
         </script>
         <script>
@@ -336,6 +336,13 @@
                     dots.style.display = "inline";
                     btnText.innerHTML = "Read more"; 
                     moreText.style.display = "none";
+
+                    const id = 'hello';
+                    const yOffset = -10; 
+                    const element = document.getElementById(id);
+                    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({top: y, behavior: 'smooth'});
+
                     var elem = document.getElementById("hello");
                     elem.scrollIntoView();
                 } else {
