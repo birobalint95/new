@@ -103,7 +103,6 @@
                     <div class="timeline">
                     <ul>
                         <li>
-
                             <div class="content">
                                 <h3>Product Owner</h3>
                                 <h4>Jaguar Land Rover</h4>
@@ -354,21 +353,18 @@
             }
         </script>
         <script>
-            function myFunction() {
-                var dots = document.getElementById("dots");
-                var moreText = document.getElementById("more");
-                var btnText = document.getElementById("myBtn2");
-            
+            function myFunction(elem) {
+                var parent = elem.parentNode;
+                var dots = parent.children[3];
+                var moreText = parent.children[4];
+                var btnText = elem;
                 if (dots.style.display === "none") {
                     dots.style.display = "inline";
                     btnText.innerHTML = "Read more"; 
                     moreText.style.display = "none";
-
-                    const id = 'hello';
-                    const yOffset = -20; 
-                    const element = document.getElementById(id);
-                    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({top: y, behavior: 'smooth'});
+                    const yOffset = -20;
+                    const y = elem.parentNode.nextElementSibling.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({top: y, behavior: 'smooth'})
                 } else {
                     dots.style.display = "none";
                     btnText.innerHTML = "Read less"; 
