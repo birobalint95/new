@@ -469,7 +469,7 @@ html {
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 @media (hover: hover) {
@@ -630,4 +630,14 @@ html {
 
 .flexContainer > * {
     margin: 2px;
+}
+
+#myBtn2 {
+    border: none;
+    outline: none;
+    background-color: #a900ff;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 10px;
 }
