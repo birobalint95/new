@@ -372,6 +372,10 @@ html {
     font-size:14px;
 }
 
+.timeline ul li .content h4{
+    color: #162c3b;
+}
+
 .timeline ul li:nth-child(odd) .time {
     position:absolute;
     top:12px;
@@ -485,11 +489,9 @@ html {
     perspective: 800px;
 }
 
-@media (hover: hover) {
-    .container-2:hover > .card {
-        cursor: pointer;
-        transform: rotateY(180deg);
-    }
+.container-2:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
 }
   
 .card {
