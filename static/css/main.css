@@ -466,9 +466,11 @@ html {
     padding: 15px;
     border-radius: 4px;
 }
-  
-#myBtn:hover {
-    background-color: #dd9aff;
+
+@media (hover: hover) {
+    #myBtn:hover {
+        background-color: #dd9aff;
+    }
 }
 
 .services .container .serviceBx.flip-card {
@@ -482,10 +484,12 @@ html {
     height: 100%;
     perspective: 800px;
 }
-  
-.container-2:hover > .card {
-    cursor: pointer;
-    transform: rotateY(180deg);
+
+@media (hover: hover) {
+    .container-2:hover > .card {
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
 }
   
 .card {
@@ -592,12 +596,15 @@ html {
 .footer a {
     padding: 5px;
     color: white;
+    text-decoration: none;
 }
-  
-.footer a:hover {
-    color: #3f8ffc;
+
+@media (hover: hover) {
+    .footer a:hover {
+        color: #3f8ffc;
+    }
 }
-  
+
 #facebook-link {
     padding: 2px;
 }
