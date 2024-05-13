@@ -514,7 +514,7 @@ html {
     border-radius: 2rem;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
 }
   
 .back {
@@ -582,4 +582,22 @@ html {
     .skill-container {
         font-size: 12px;
     }
+}
+
+.footer-name {
+    color: white;
+    padding-bottom: 24px;
+}
+  
+.footer a {
+    padding: 5px;
+    color: white;
+}
+  
+.footer a:hover {
+    color: #3f8ffc;
+}
+  
+#facebook-link {
+    padding: 2px;
 }
