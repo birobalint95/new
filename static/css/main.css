@@ -367,6 +367,12 @@ html {
     text-align: justify;
 }
 
+@media(max-width:1000px) {
+    .timeline ul li p {
+        font-size: 13px;
+    }
+}
+
 .timeline ul li .time h4 {
     margin:0;
     padding:0;
@@ -588,6 +594,9 @@ html {
     }
     .skill-container {
         font-size: 12px;
+    }
+    #more {
+        font-size: 13px;
     }
 }
 
