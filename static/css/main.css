@@ -364,6 +364,7 @@ html {
 .timeline ul li p {
     margin:10px 0 0;
     padding:0;
+    text-align: justify;
 }
 
 .timeline ul li .time h4 {
@@ -609,4 +610,24 @@ html {
 
 #facebook-link {
     padding: 2px;
+}
+
+.skill-in-role {
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px; 
+    border-radius: 10px;
+    margin: 20px;
+}
+  
+.flexContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flexContainer > * {
+    margin: 2px;
 }
