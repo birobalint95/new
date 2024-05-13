@@ -642,7 +642,7 @@ html {
     margin: 2px;
 }
 
-#myBtn2 {
+.read-more {
     border: none;
     outline: none;
     background-color: #a900ff;
