@@ -494,6 +494,8 @@ html {
     background-color: transparent;
     width: 350px;
     height: 400px;
+    text-decoration: none;
+    color: black;
 }
 
 .container-2 {
