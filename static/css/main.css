@@ -226,6 +226,8 @@ html {
     border-radius: 20px;
     z-index: 1;
     margin: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .services .container .serviceBx img {
@@ -494,8 +496,6 @@ html {
     background-color: transparent;
     width: 350px;
     height: 400px;
-    text-decoration: none;
-    color: black;
 }
 
 .container-2 {
