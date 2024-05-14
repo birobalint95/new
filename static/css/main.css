@@ -90,9 +90,9 @@ html {
 
 .nav-item {
     text-decoration: none;
-    color: #232323;
+    color: white;
     transition: color 0.3s ease;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #menuToggle {
@@ -155,7 +155,7 @@ html {
 }
 
 #menu li {
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 22px;
 }
 
@@ -239,6 +239,9 @@ html {
 }
 
 @media (max-width: 1000px) {
+    .text {
+        font-size: 13px;
+    }
     .banner {
         padding: 50px;
     }
@@ -246,7 +249,7 @@ html {
         font-size: 36px;
     }
     .banner .content p {
-        font-size: 16px;
+        font-size: 13px;
     }
     .about {
         flex-direction: column;
@@ -410,6 +413,9 @@ html {
 @media(max-width:1000px) {
     .timeline {
         width:100%;
+    }
+    .timeline ul li .content h4 {
+        font-size: 13px;
     }
 }
 
@@ -652,4 +658,10 @@ html {
     padding: 8px;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+@media(max-width:1000px) {
+    .skill-in-role {
+        font-size: 11px;
+    }
 }
