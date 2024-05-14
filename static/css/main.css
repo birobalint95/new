@@ -304,12 +304,12 @@ html {
     background:#c5c5c5;
 }
   
-.timeline ul {
+.timeline .timeline-list {
     padding:0;
     margin:0;
 }
   
-.timeline ul li {
+.timeline .timeline-list .timeline-list-item {
     list-style:none;
     position:relative;
     width:50%;
@@ -317,13 +317,13 @@ html {
     box-sizing:border-box;
 }
   
-.timeline ul li:nth-child(odd) {
+.timeline .timeline-list .timeline-list-item:nth-child(odd) {
     float:left;
     text-align:right;
     clear:both;
 }
   
-.timeline ul li:nth-child(even) {
+.timeline .timeline-list .timeline-list-item:nth-child(even) {
     float:right;
     text-align:left;
     clear:both;
@@ -333,7 +333,7 @@ html {
     padding-bottom:20px;
 }
 
-.timeline ul li:nth-child(odd):before {
+.timeline .timeline-list .timeline-list-item:nth-child(odd):before {
     content:'';
     position:absolute;
     width:10px;
@@ -345,7 +345,7 @@ html {
     box-shadow:0 0 0 3px #162c3b;
 }
 
-.timeline ul li:nth-child(even):before {
+.timeline .timeline-list .timeline-list-item:nth-child(even):before {
     content:'';
     position:absolute;
     width:10px;
@@ -357,36 +357,36 @@ html {
     box-shadow:0 0 0 3px #162c3b;
 }
 
-.timeline ul li h3 {
+.timeline .timeline-list .timeline-list-item h3 {
     padding:0;
     margin:0;
     color:#162c3b;
     font-weight:600;
 }
 
-.timeline ul li p {
+.timeline .timeline-list .timeline-list-item p {
     margin:10px 0 0;
     padding:0;
     text-align: justify;
 }
 
 @media(max-width:1000px) {
-    .timeline ul li p {
+    .timeline .timeline-list .timeline-list-item p {
         font-size: 13px;
     }
 }
 
-.timeline ul li .time h4 {
+.timeline .timeline-list .timeline-list-item .time h4 {
     margin:0;
     padding:0;
     font-size:14px;
 }
 
-.timeline ul li .content h4{
+.timeline .timeline-list .timeline-list-item .content h4{
     color: #162c3b;
 }
 
-.timeline ul li:nth-child(odd) .time {
+.timeline .timeline-list .timeline-list-item:nth-child(odd) .time {
     position:absolute;
     top:12px;
     right:-165px;
@@ -398,7 +398,7 @@ html {
     box-shadow:0 0 0 3px #162c3b;
 }
 
-.timeline ul li:nth-child(even) .time {
+.timeline .timeline-list .timeline-list-item:nth-child(even) .time {
     position:absolute;
     top:12px;
     left:-165px;
@@ -414,7 +414,7 @@ html {
     .timeline {
         width:100%;
     }
-    .timeline ul li .content h4 {
+    .timeline .timeline-list .timeline-list-item .content h4 {
         font-size: 13px;
     }
 }
@@ -435,22 +435,22 @@ html {
         height:100%;
     }
     
-    .timeline ul li:nth-child(odd),
-    .timeline ul li:nth-child(even) {
+    .timeline .timeline-list .timeline-list-item:nth-child(odd),
+    .timeline .timeline-list .timeline-list-item:nth-child(even) {
         width:100%;
         text-align:left;
         padding-left:50px;
         padding-bottom:50px;
     }
 
-    .timeline ul li:nth-child(odd):before,
-    .timeline ul li:nth-child(even):before {
+    .timeline .timeline-list .timeline-list-item:nth-child(odd):before,
+    .timeline .timeline-list .timeline-list-item:nth-child(even):before {
         top:-18px;
         left:16px;
     }
 
-    .timeline ul li:nth-child(odd) .time,
-    .timeline ul li:nth-child(even) .time {
+    .timeline .timeline-list .timeline-list-item:nth-child(odd) .time,
+    .timeline .timeline-list .timeline-list-item:nth-child(even) .time {
       top:-30px;
       left:50px;
       right:inherit;
@@ -593,6 +593,14 @@ html {
 
 #more {
     display: none;
+}
+
+.main-responsibilities{
+    text-align: justify;
+}
+
+.main-responsibilities-list {
+    margin-left: 30px;
 }
 
 @media(max-width:1000px) {
