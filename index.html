@@ -714,22 +714,15 @@
                 </a>  
             </div>
         </section>
-        <script src="static/js/skrollr.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
         <script type="text/javascript">
-
-            function is_touch_enabled() {
-                return ( 'ontouchstart' in window ) || 
-                    ( navigator.maxTouchPoints > 0 ) ||
-                    ( navigator.msMaxTouchPoints > 0 );
-            }
-
-            if(! is_touch_enabled() ) {
+            var isTouchDevice =
+                (('ontouchstart' in window) ||
+                (navigator.MaxTouchPoints > 0) ||
+                (navigator.msMaxTouchPoints > 0));
+            
+            if(!isTouchDevice){
                 var s = skrollr.init();
-            }
-
-            const isMobile = navigator.userAgentData.mobile;
-            if(! isMobile) {
-                // var s = skrollr.init();
             }
         </script>
         <script>
